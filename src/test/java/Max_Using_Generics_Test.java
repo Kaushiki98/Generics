@@ -21,4 +21,21 @@ public class Max_Using_Generics_Test {
         Integer max = maxVal.maximum(14, 43, 51);
         Assert.assertEquals((Integer) 51, max);
     }
+    @Test
+    public void givenMaxNumberAt_FirstPosition_inFloatValue() {
+        Double max = maxVal.maximum(5.4, 3.3, 2.0);
+        Assert.assertEquals((Double) 5.4, max);
+    }
+
+    @Test
+    public void givenMaxNumberAt_SecondPosition_inFloatValue() {
+        Double max = maxVal.maximum(1.4, 4.3, 2.1);
+        Assert.assertEquals((Double) 4.3, max);
+    }
+
+    @Test
+    public void givenMaxNumberAt_ThirdPosition_inFloatValue() {
+        Double max = maxVal.maximum(4.3, 3.9, 5.1);
+        Assert.assertEquals((Double) 5.1, max);
+    }
 }

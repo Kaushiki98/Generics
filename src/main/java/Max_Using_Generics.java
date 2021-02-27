@@ -13,6 +13,7 @@ public class Max_Using_Generics {
 
         public static void main(String args[]) {
             System.out.printf("Maximum Value is: "+maximum(3,64,8));
+            System.out.printf("Maximum Value is: "+maximum(3.3,6.6,8.4));
         }
 }
 
